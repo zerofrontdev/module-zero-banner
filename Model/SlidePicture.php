@@ -31,7 +31,11 @@ class SlidePicture
         Banner::WIDTH_CONTAINED => [480, 768, 1024, 1366, 1600, 2048],
         Banner::WIDTH_FULL => [640, 1024, 1366, 1600, 1920, 2560],
     ];
-    private const MOBILE_WIDTHS = [360, 540, 720, 1080];
+    /**
+     * The phones' own widths: 750 for a 375 px screen at 2x and Lighthouse's 412 px at 1.75x (721 px, which took the
+     * 1080 copy when the step after 540 was 720), 828 for 414 px at 2x.
+     */
+    private const MOBILE_WIDTHS = [360, 540, 640, 750, 828, 1080];
 
     private const SIZES = [
         Banner::WIDTH_CONTAINED => '(min-width: 48rem) calc(100vw - 4rem), calc(100vw - 2rem)',

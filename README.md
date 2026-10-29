@@ -90,8 +90,9 @@ Pages are cached. New or changed slides show once the page cache refreshes
 
 ## General settings
 
-**Stores → Configuration → Zero → Banners**: image quality (80 is a good
-balance) and WebP (on). They apply to all banners.
+**Stores → Configuration → Zero → Banners**: image quality (75 by default since 2026-10-29: a detailed photo's 750 px
+phone copy is 18% lighter than at 80, the difference hardly visible) and WebP
+(on). They apply to all banners.
 
 ## Disabling or removing
 
