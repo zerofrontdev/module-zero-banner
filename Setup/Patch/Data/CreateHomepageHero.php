@@ -16,8 +16,7 @@ use Zero\Banner\Setup\HomepageWidget;
 
 /**
  * A fresh store's home page hero: the "Homepage hero" banner with one
- * slide about Zero, placed on the home page (until 1.3.3 also a Vilmate and a
- * Fixstacks slide: partners are on zerofront.dev/partners now). Only when the store has no banners yet; a store with banners
+ * slide about Zero, placed on the home page. Only when the store has no banners yet; a store with banners
  * (ours, or one that made its own) is left alone. The slides are ordinary
  * slides afterwards: edit or delete them in Content > Banners.
  */
@@ -84,7 +83,7 @@ class CreateHomepageHero implements DataPatchInterface
 
     public static function getDependencies(): array
     {
-        return [MigrateToBannersWithSlides::class, AddVilmatePartnerSlide::class];
+        return [MigrateToBannersWithSlides::class];
     }
 
     public function getAliases(): array
